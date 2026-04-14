@@ -16,8 +16,8 @@ const SingleFrind =async ({params}) => {
 
     return (
         <div className="w-10/12 mx-auto my-7">
-         <div className="grid lg:grid-cols-3">
-        <div className="space-y-2 mx-auto">
+         <div className="grid lg:grid-cols-3 ">
+        <div className="space-y-2 mx-auto ">
             <div>
                 <div className="p-10 shadow-sm flex flex-col justify-around items-center text-center rounded-xl">
                             <Image className="rounded-full" src={friend.picture} alt="frinds" width={70} height={70}></Image>
@@ -46,7 +46,20 @@ const SingleFrind =async ({params}) => {
             </div>
         </div>
         <div className="col-span-2">
-
+          <div className="grid grid-cols-2  md:grid-cols-3 gap-3 text-center ">
+          <div className="shadow-sm py-15">
+            <h2 className="text-4xl font-bold">{friend.days_since_contact}</h2>
+            <p className="text-gray-500">Days Since Contact</p>
+          </div>
+          <div className="shadow-sm py-15">
+            <h2 className="text-4xl font-bold">{friend.goal}</h2>
+            <p className="text-gray-500">Goal (Days)</p>
+          </div>
+          <div className="shadow-sm py-15">
+            <h2 className="text-4xl font-bold">{friend.next_due_date}</h2>
+            <p className="text-gray-500">Next Due</p>
+          </div>
+        </div>
         </div>
          </div>
         </div>
