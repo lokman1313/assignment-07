@@ -1,6 +1,9 @@
 import ReChart from "@/components/Chart/ReChart";
 
-
+export const metadata = {
+  title: "Friendship Analytics",
+  description: "Analytics dashboard for friend interactions",
+}
 const page = () => {
     return (
         <div className="w-10/12 mx-auto">
