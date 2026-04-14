@@ -15,12 +15,19 @@ const Home = () => {
 
   return (
     <div className=" w-10/12 mx-auto">
-      <h1>this is root</h1>
-     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+      <div className="text-center">
+        <h1 className="text-5xl font-bold">Friends to keep close in your life</h1>
+        <p className="text-gray-500 font-semibold">Your personal shelf of meaningful connections. Browse, tend, and nurture the <br />
+        relationships that matter most.</p>
+      </div>
+      <div className="my-7">
+      <h2 className="text-2xl font-bold py-2">Your Friends</h2>
+     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 ">
       {frinds.map(frind => (
         <Card key={frind.id} frind={frind}></Card>
       ))}
      </div>
+      </div>
     </div>
   );
 };

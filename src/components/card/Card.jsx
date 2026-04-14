@@ -9,12 +9,12 @@ const Card = ({frind}) => {
             <h3 className="font-semibold text-gray-500">{frind.days_since_contact}d ago </h3>
             <div className="md:flex gap-2 my-3">
             {
-                frind.tags.map((tag,index)=> <div key={index} className="badge badge-soft badge-success">{tag}</div> )
+                frind.tags.map((tag,index)=> <div key={index} className="badge badge-soft badge-success rounded-full">{tag}</div> )
             }
             </div>
             <div>
                 {
-                    frind.status === "almost due" ? (<div className="badge badge-warning text-white">Warning</div>) : frind.status === "on-track" ? (<div className="badge badge-success text-white">Success</div>) : (<div className="badge badge-error text-white">Error</div>)
+                    frind.status === "almost due" ? (<div className="badge badge-warning text-white rounded-full">Warning</div>) : frind.status === "on-track" ? (<div className="badge badge-success text-white rounded-full">Success</div>) : (<div className="badge badge-error text-white rounded-full">Error</div>)
                 }
             </div>
         </div>

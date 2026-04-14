@@ -6,7 +6,7 @@
     "email": "arafat.rahman@gmail.com",
     "days_since_contact": 18,
     "status": "overdue",
-    "tags": ["university", "close friend"],
+    "tags": ["UNIVERSITY", "CLOSE FRIEND"],
     "bio": "Met during CSE at university. We used to work on coding projects and attend hackathons together.",
     "goal": 14,
     "next_due_date": "2026-03-27"
@@ -18,7 +18,7 @@
     "email": "nusrat.jahan@yahoo.com",
     "days_since_contact": 10,
     "status": "almost due",
-    "tags": ["school", "best friend"],
+    "tags": ["SCHOOL", "BEST FRIEND"],
     "bio": "School friend since class 8. We still share life updates and support each other’s goals.",
     "goal": 14,
     "next_due_date": "2026-04-18"
@@ -30,7 +30,7 @@
     "email": "tanvir.hasan@outlook.com",
     "days_since_contact": 5,
     "status": "on-track",
-    "tags": ["office", "colleague"],
+    "tags": ["OFFICE", "COLLEAGUE"],
     "bio": "Work colleague from my previous internship. We often discuss tech trends and career growth.",
     "goal": 14,
     "next_due_date": "2026-04-23"
@@ -42,7 +42,7 @@
     "email": "sadia.afrin@gmail.com",
     "days_since_contact": 20,
     "status": "overdue",
-    "tags": ["family friend"],
+    "tags": ["FAMILY FRIEND"],
     "bio": "Family friend who lives nearby. We occasionally meet during festivals and family gatherings.",
     "goal": 15,
     "next_due_date": "2026-03-30"
@@ -54,7 +54,7 @@
     "email": "mehedi.hasan@gmail.com",
     "days_since_contact": 12,
     "status": "almost due",
-    "tags": ["gym", "fitness"],
+    "tags": ["GYM", "FITNESS"],
     "bio": "Gym partner who motivates me to stay consistent with workouts and healthy habits.",
     "goal": 14,
     "next_due_date": "2026-04-16"
@@ -66,7 +66,7 @@
     "email": "farhana.kabir@gmail.com",
     "days_since_contact": 3,
     "status": "on-track",
-    "tags": ["online friend", "design"],
+    "tags": ["ONLINE FRIEND", "DESIGN"],
     "bio": "Met through an online design community. We exchange feedback on UI/UX projects.",
     "goal": 10,
     "next_due_date": "2026-04-21"
@@ -78,7 +78,7 @@
     "email": "rakibul.islam@gmail.com",
     "days_since_contact": 16,
     "status": "overdue",
-    "tags": ["childhood", "neighbor"],
+    "tags": ["CHILDHOOD", "NEIGHBOR"],
     "bio": "Childhood friend from my hometown. We grew up playing cricket together in the neighborhood.",
     "goal": 14,
     "next_due_date": "2026-04-01"
@@ -90,7 +90,7 @@
     "email": "jannatul.ferdous@gmail.com",
     "days_since_contact": 7,
     "status": "on-track",
-    "tags": ["university", "study partner"],
+    "tags": ["UNIVERSITY", "STUDY PARTNER"],
     "bio": "University study partner. We prepared for exams together and shared notes regularly.",
     "goal": 14,
     "next_due_date": "2026-04-21"
