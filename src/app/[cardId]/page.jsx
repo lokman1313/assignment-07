@@ -3,7 +3,7 @@ import Image from "next/image";
 import { RiArchiveLine, RiDeleteBinLine, RiNotificationSnoozeLine } from "react-icons/ri";
 
 const frindsData = async () =>{
-    const res = await fetch ('/friends.json');
+    const res = await fetch ('https://assignment-07-nu.vercel.app//friends.json',{ cache:'no-store'});
     const data = await res.json();
     return data;
 }
