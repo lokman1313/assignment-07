@@ -2,8 +2,9 @@
 
 const loading = () => {
     return (
-        <div className="w-dvw h-dvh">
-            <span className="loading loading-spinner loading-xl"></span>
+        <div className="flex justify-center items-center p-50">
+            <span className="loading loading-dots  w-[10vw] h-[10vh]"></span>
+           
         </div>
     );
 };

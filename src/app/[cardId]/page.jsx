@@ -1,4 +1,5 @@
 import Card from "@/components/card/Card";
+import InterectivitiToggolBtn from "@/components/intarectiviti/InterectivitiToggolBtn";
 import Image from "next/image";
 import { RiArchiveLine, RiDeleteBinLine, RiNotificationSnoozeLine } from "react-icons/ri";
 
@@ -16,10 +17,10 @@ const SingleFrind =async ({params}) => {
 
     return (
         <div className="w-10/12 mx-auto my-7">
-         <div className="grid lg:grid-cols-3 ">
+         <div className="grid lg:grid-cols-3 gap-4">
         <div className="space-y-2 mx-auto ">
             <div>
-                <div className="p-10 shadow-sm flex flex-col justify-around items-center text-center rounded-xl">
+                <div className="p-8 shadow-sm flex flex-col justify-around items-center text-center rounded-xl">
                             <Image className="rounded-full" src={friend.picture} alt="frinds" width={70} height={70}></Image>
                             <h2 className="font-bold text-xl">{friend.name}</h2>
                             <h3 className="font-semibold text-gray-500">{friend.days_since_contact}d ago </h3>
@@ -33,6 +34,8 @@ const SingleFrind =async ({params}) => {
                                     friend.status === "almost due" ? (<div className="badge badge-warning text-white rounded-full">Warning</div>) : friend.status === "on-track" ? (<div className="badge badge-success text-white rounded-full">Success</div>) : (<div className="badge badge-error text-white rounded-full">Error</div>)
                                 }
                             </div>
+                            <p className="text-sm text-gray-500 my-2">{friend.bio}</p>
+                            <p className="text-sm text-gray-500 ">Preferred : {friend.email}</p>
                         </div>
             </div>
             <div className="p-2 shadow-sm rounded-xl flex justify-center items-center gap-1">
@@ -59,6 +62,17 @@ const SingleFrind =async ({params}) => {
             <h2 className="text-4xl font-bold">{friend.next_due_date}</h2>
             <p className="text-gray-500">Next Due</p>
           </div>
+        </div>
+        <div className="p-4 shadow-sm my-3">
+            <div className="flex justify-between items-center">
+                <p className="text-lg font-semibold text-[#244D3F]">Relationship Goal</p>
+                <button className="btn">Edit</button>
+            </div>
+            <p className="text-gray-500">Connect every <span className="text-lg font-semibold text-black">30 days</span></p>
+        </div>
+        <div className="p-3 shadow-sm">
+            <p className="text-lg font-semibold text-[#244D3F] mb-2">Quick Check-In</p>
+         <InterectivitiToggolBtn></InterectivitiToggolBtn>
         </div>
         </div>
          </div>
