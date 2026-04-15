@@ -1,14 +1,17 @@
 'use client'
 
+import { InterectiveContext } from '@/context/Interectiv.context';
+import { useContext } from 'react';
 import { Legend, Pie, PieChart, ResponsiveContainer } from 'recharts';
-
-const data = [
-  { name: 'Group A', value: 400, fill: '#0088FE' },
-  { name: 'Group B', value: 300, fill: '#00C49F' },
-  { name: 'Group C', value: 300, fill: '#FFBB28' },
-];
-
 const ReChart = () => {
+
+  const {call,text,videoCall} =useContext(InterectiveContext)
+  const data = [
+    { name: 'Call', value: call.length , fill: '#244D3F' },
+    { name: 'Text', value: text.length , fill: '#7E35E1' },
+    { name: 'Video Call', value: videoCall.length , fill: '#37A163' },
+  ];
+
   return (
     <div style={{ width: '300px', height: '450px', margin: '0 auto'}}>
       <ResponsiveContainer>
