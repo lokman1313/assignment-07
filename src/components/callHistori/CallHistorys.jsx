@@ -7,6 +7,18 @@ import textLogo from '@/assets/text.png'
 import videoLogo from '@/assets/video.png'
 
 const CallHistorys = () => {
+    const date = new Date();
+
+const formatted = date.toLocaleString('en-US', {
+  day: 'numeric',
+  month: 'long',    
+  year: 'numeric',   
+  hour: 'numeric',
+  minute: 'numeric',
+  second: 'numeric'
+});
+
+
     const context = useContext(InterectiveContext);
     if(!context) return null;
     const {call,text,videoCall}=context;
@@ -48,7 +60,7 @@ const getLogo = (type) => {
                         <div>
                             <p className="font-semibold"><span className="text-xl font-bold">{item.type}</span> sent {item.name}</p>
                             <p className="text-xs text-gray-500 capitalize">
-                                {new Date().toLocaleString()}
+                                {formatted}
                             </p>
                         </div>
                     </div>

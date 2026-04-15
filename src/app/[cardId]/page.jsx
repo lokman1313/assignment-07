@@ -38,15 +38,15 @@ const SingleFrind =async ({params}) => {
                             <p className="text-sm text-gray-500 ">Preferred : {friend.email}</p>
                         </div>
             </div>
-            <div className="p-2 shadow-sm rounded-xl flex justify-center items-center gap-1">
+            <button className="btn rounded-xl flex justify-center items-center gap-1 w-full">
                 <RiNotificationSnoozeLine /><p className="font-semibold">Snooze 2 weeks</p>
-            </div>
-            <div className="p-2 shadow-sm rounded-xl flex justify-center items-center gap-1">
+            </button>
+            <button className="btn rounded-xl flex justify-center items-center gap-1 w-full">
                 <RiArchiveLine /><p className="font-semibold">Archive</p>
-            </div>
-            <div className="p-2 shadow-sm rounded-xl flex justify-center items-center gap-1 text-error">
+            </button>
+            <button className="btn rounded-xl flex justify-center items-center gap-1 text-error w-full">
                 <RiDeleteBinLine /><p className="font-semibold">Delete</p>
-            </div>
+            </button>
         </div>
         <div className="col-span-2">
           <div className="grid grid-cols-2  md:grid-cols-3 gap-3 text-center ">
