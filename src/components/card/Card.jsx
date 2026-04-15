@@ -16,7 +16,7 @@ const Card = ({frind}) => {
             </div>
             <div>
                 {
-                    frind.status === "almost due" ? (<div className="badge badge-warning text-white rounded-full">Warning</div>) : frind.status === "on-track" ? (<div className="badge badge-success text-white rounded-full">Success</div>) : (<div className="badge badge-error text-white rounded-full">Error</div>)
+                    frind.status === "almost due" ? (<div className="badge badge-warning text-white rounded-full">Almost Due</div>) : frind.status === "on-track" ? (<div className="badge badge-success text-white rounded-full">On-Track</div>) : (<div className="badge badge-error text-white rounded-full">Overdue</div>)
                 }
             </div>
         </div>

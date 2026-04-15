@@ -31,7 +31,7 @@ const SingleFrind =async ({params}) => {
                             </div>
                             <div>
                                 {
-                                    friend.status === "almost due" ? (<div className="badge badge-warning text-white rounded-full">Warning</div>) : friend.status === "on-track" ? (<div className="badge badge-success text-white rounded-full">Success</div>) : (<div className="badge badge-error text-white rounded-full">Error</div>)
+                                    friend.status === "almost due" ? (<div className="badge badge-warning text-white rounded-full">Almost Due</div>) : friend.status === "on-track" ? (<div className="badge badge-success text-white rounded-full">On-Track</div>) : (<div className="badge badge-error text-white rounded-full">Overdue</div>)
                                 }
                             </div>
                             <p className="text-sm text-gray-500 my-2">{friend.bio}</p>
@@ -72,7 +72,7 @@ const SingleFrind =async ({params}) => {
         </div>
         <div className="p-3 shadow-sm">
             <p className="text-lg font-semibold text-[#244D3F] mb-2">Quick Check-In</p>
-         <InterectivitiToggolBtn></InterectivitiToggolBtn>
+         <InterectivitiToggolBtn friend={friend}></InterectivitiToggolBtn>
         </div>
         </div>
          </div>

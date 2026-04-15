@@ -1,3 +1,4 @@
+import CallHistorys from "@/components/callHistori/CallHistorys";
 
 
 
@@ -8,8 +9,11 @@ export const metadata = {
 
 const TimeLine = () => {
     return (
-        <div>
-            <h1>timeline</h1>
+        <div className="w-9/12 mx-auto">
+            <h1 className="text-4xl font-bold">Timeline</h1>
+            <div className="my-5">
+                <CallHistorys></CallHistorys>
+            </div>
         </div>
     );
 };
