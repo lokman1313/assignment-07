@@ -20,6 +20,6 @@ I have used the following technologies to build this project:
 
 ###  3 key features of your project
 
-- 1.It show your all frinds on Home page .
-- 2.You intract with your frinds with this website.
-- 3.You can see your intraction histori in timeline page and also a chart in stats page.
+- It show your all frinds on Home page .
+- You intract with your frinds with this website.
+- You can see your intraction histori in timeline page and also a chart in stats page.
