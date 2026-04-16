@@ -1,4 +1,5 @@
 import CallHistorys from "@/components/callHistori/CallHistorys";
+import TimelineWrapper from "@/components/TimelineWrapper";
 
 
 
@@ -8,12 +9,14 @@ export const metadata = {
 }
 
 const TimeLine = () => {
+    
     return (
-        <div className="w-9/12 mx-auto">
+        <div className="w-9/12 mx-auto my-5">
             <h1 className="text-4xl font-bold">Timeline</h1>
-            <div className="my-5">
+            <div className="my-5"><TimelineWrapper></TimelineWrapper></div>
+            {/* <div className="my-5  p-4">
                 <CallHistorys></CallHistorys>
-            </div>
+            </div> */}
         </div>
     );
 };
