@@ -55,12 +55,8 @@ const CallHistorys = ({ type }) => {
                                 <span className="text-xl font-bold">{item.type}</span> sent to {item.name}
                             </p>
                             <p className="text-xs text-gray-500 capitalize">
-                                
-                                {new Date(item.date).toLocaleDateString('en-US', {
-                                    day: 'numeric',
-                                    month: 'long',
-                                    year: 'numeric'
-                                })}
+                               {item.date ? new Date(item.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) 
+                                : 'No date'}
                             </p>
                         </div>
                     </div>
